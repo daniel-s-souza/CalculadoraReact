@@ -8,9 +8,9 @@ function App() {
       <Content>
         <Input />
         <Row>
-        <Button label="*"/>
-        <Button label="/"/>
         <Button label="C"/>
+        <Button label="%"/>
+        <Button label="/"/>
         <Button label="X"/>
         </Row>
         <Row>
