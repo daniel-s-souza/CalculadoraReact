@@ -1,9 +1,13 @@
-import {Container} from './style'
+import Input from './componnets/Input';
+import Button from './componnets/Button';
+import {Container, Content} from './style'
 
 function App() {
   return (
     <Container >
-     ola
+      <Content>
+        <Input />
+      </Content>
     </Container>
   );
 }
