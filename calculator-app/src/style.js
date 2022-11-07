@@ -11,6 +11,19 @@ justify-content: center;
 `
 export const Content = styled.div`
 background-color: #ffffff;
-width: 80%;
-min-height: 350px;
+width: 50%;
 `
+
+export const Row = styled.div`
+  display: flex;
+  flex-drection: row;
+  justify-content: space-between;
+  align-items: center;
+`
+export const Columns = styled.div`
+  display: flex;
+  flex-drection: column;
+  justify-content: space-between;
+  align-items: center;
+`
+

@@ -1,8 +1,10 @@
-function Button() {
+import {ButtonContainer} from './style';
+
+function Button({ label, onClick }) {
   return (
-    <div className="App">
-     ola
-    </div>
+    <ButtonContainer onClick={onClick}>
+      {label}
+    </ButtonContainer>
   );
 }
 
