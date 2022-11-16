@@ -1,12 +1,16 @@
 import Input from './componnets/Input';
 import Button from './componnets/Button';
-import {Container, Content, Row, Columns} from './style'
+import {Container, Content, Row} from './style'
+import { useState } from 'react';
 
 function App() {
+
+  const [currentNumber, setCurrentNumber] = useState(0)
+
   return (
     <Container >
       <Content>
-        <Input />
+        <Input value = {currentNumber}/>
         <Row>
         <Button label="C"/>
         <Button label="%"/>
