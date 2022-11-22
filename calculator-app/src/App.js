@@ -42,6 +42,19 @@ function App() {
     }
   }
 
+  const handleDivision = () => {
+    if (firstNumber === '') {
+      setFirstNumber(String(currentNumber));
+      setCurrentNumber('');
+      setOperation('/')
+    } else {
+      const sum = Number(firstNumber) / Number(currentNumber);
+      setCurrentNumber(String(sum));
+      setFirstNumber('')
+    }
+  }
+
+
 
   const handleRemove = () => {
     if (firstNumber === '') {
@@ -67,6 +80,9 @@ function App() {
           case '*':
             handleMultiplication();   
             break;
+            case '/':
+              handleDivision();   
+              break;
         default:
           break;
       }
@@ -82,7 +98,7 @@ function App() {
         <Row>
         <Button label="9" onClick={() => handleAddNumber('9')}/>
         <Button label="C" onClick={handleClear}/>
-        <Button label="/" onClick={() => handleAddNumber('/')}/>
+        <Button label="/" onClick={handleDivision}/>
         <Button label="x" onClick={handleMultiplication}/>
         </Row>
         <Row>
